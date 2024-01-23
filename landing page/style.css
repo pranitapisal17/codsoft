@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap');
+
+:root{
+    --primary-color:#00605f;
+    --secondary-color:#017479;
+    --text-dark:#0f172a;
+    --text-light:#94a3b8;
+    --white:#ffffff;
+    --max-width:1400px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family:'Poppins',sans-serif;
+    background: linear-gradient(to right,rgba(2,82,89,0.9),rgba(255,255,255,0)),url("images/landbackground1\ \(1\).png");
+    background-position: center center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
+.container{
+    max-width: var(--max-width);
+    min-height: 100vh;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav_logo img{
+    max-width: 70px;
+}
+
+.nav_links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a{
+    text-decoration: none;
+    font-weight:600 ;
+    color: var(--white);
+}
+
+.search{
+    width: 100%;
+    max-width: 300px;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    background-color: var(--white);
+    border-radius:2rem ;
+    transition: 0.3s;
+}
+.search input{
+    width: 100%;
+    font-size:1rem ;
+    color: var(--primary-color);
+    outline:none;
+    border:none;
+}
+
+.search input::placeholder{
+    color: var(--secondary-color);
+}
+
+.search span{
+    font-size: 1.5rem;
+    color:var(--primary-color);
+    
+}
+
+.login{
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login:hover{
+    background-color:var(--secondary-color);
+}
+
+
+.login span{
+    padding: 5px 8px;
+    font-size: 1.5rem;
+    color: var(--text-light);
+    background-color: var(--white);
+    border-radius:100% ;
+}
+
+
+
+
+
